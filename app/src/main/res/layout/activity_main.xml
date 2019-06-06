@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gencoglu.inclass07.MainActivity">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextSearch"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/searchTextHint"
+        android:layout_width="wrap_content" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editTextSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/listView" />
+
+    <Button
+        android:text="@string/clearButtonLabel"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonClear"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="70dp"
+        android:onClick="resetSearch" />
+
+    <Button
+        android:text="@string/goButtonLabel"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGo"
+        android:layout_alignBaseline="@+id/editTextSearch"
+        android:layout_alignBottom="@+id/editTextSearch"
+        android:layout_toLeftOf="@+id/buttonClear"
+        android:layout_toStartOf="@+id/buttonClear"
+        android:layout_width="70dp"
+        android:onClick="searchForText"/>
+</RelativeLayout>

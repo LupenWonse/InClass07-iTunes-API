@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InClass07</string>
+    <string name="goButtonLabel">Go</string>
+    <string name="clearButtonLabel">Clear</string>
+    <string name="searchTextHint">Search...</string>
+    <string name="LoadingProgressText">Loading News...</string>
+    <string name="labelSummary">Summary</string>
+    <string name="updatedText">Updated On: </string>
+</resources>
